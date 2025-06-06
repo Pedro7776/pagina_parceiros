@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rede de Parceiros</title>
+<!-- url fonte bright italic-->
+  <style>
+    @font-face {
+      font-family: 'BrightItalic';
+      src: url('Bright Italic.otf') format('opentype');
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #ffffff;
+      color: #33691e;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'BrightItalic', cursive;
+      font-size: 36px;
+      color: #2e7d32;
+      margin-top: 60px;
+      margin-bottom: 40px;
+    }
+
+    .logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 40px;
+      padding: 0 15px;
+    }
+
+    .logos img {
+      max-height: 100px;
+      max-width: 200px;
+      object-fit: contain;
+    }
+
+    .subtitulo {
+      font-family: 'BrightItalic', cursive;
+      font-size: 28px;
+      font-weight: normal;
+      color: #2e7d32;
+      margin: 30px 0 15px;
+      line-height: 1.4;
+    }
+
+    .paragrafo {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #4e793a;
+      padding: 0 15px;
+    }
+
+    .vermais {
+      display: inline-block;
+      font-family: 'BrightItalic', cursive;
+      margin-top: 20px;
+      font-size: 20px;
+      color: #2e7d32;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.3s;
+    }
+
+    .vermais:hover {
+      border-bottom: 2px solid #2e7d32;
+    }
+
+    @media (max-width: 600px) {
+      .logos {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .subtitulo {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Uma rede de parceiros</h1>
+
+  <div class="logos">
+    <img src="observatorio.JPG" alt="Observatório de Resíduos">
+    <img src="ninter.JPG" alt="Ninter UEL">
+    <img src="lonarte.JPG" alt="Lonarte">
+    <img src="leca.JPG" alt="LECA">
+    <img src="desplastifica.JPG" alt="Desplastifica UEL">
+  </div>
+
+  <div class="subtitulo">
+    Venha começar<br />
+    uma parceria com a gente!
+  </div>
+
+  <p class="paragrafo">
+    Somos membros de um projeto vinculado<br />
+    à Universidade Estadual de Londrina (UEL)<br />
+    promovemos conhecimento científico<br />
+    sobre desenvolvimento sustentável.
+  </p>
+
+  <a href="#parceiros" class="vermais">Ver mais</a>
+
+  <!-- Âncora do link -->
+  <div id="parceiros" style="margin-top: 100px;">
+  </div>
+
+</body>
+</html>
